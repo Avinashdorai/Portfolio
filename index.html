@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+           <p>WEB</p>
+           <p>Designer</p>
+        </div>
+        <div class="main">
+            <a href="#home"><i class="fa-solid fa-house"></i>HOME</a>
+            <a href="#about"><i class="fa-solid fa-user"></i>ABOUT ME</a>
+            <a href="#"><i class="fa-solid fa-bars"></i>EDUCATION</a>
+            <a href="#"><i class="fa-solid fa-blog"></i>EXPERIENCE</a>
+            <a href="#contact"><i class="fa-solid fa-phone"></i>CONTACT ME</a>
+        </div>
+    </div>
+    <div id="home">
+    <div class="content">
+        <h1>Hi<br><span>I'm Avinash</span><br>a Front-end Developer</h1><br><br>
+        <a href="images/resume.png" class="btn1" download>Download Resume</a>
+    <div class="connect">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+    </div>
+    </div>
+    <div class="image1">
+        <img src="images/WhatsApp_Image_2024-07-07_at_09.55.13_e180239a-removebg-preview.png" alt="">
+    </div>
+    </div>
+    <div id="about">
+        <div class="image2">
+            <img src="images/WhatsApp_Image_2024-07-07_at_09.55.13_e180239a-removebg-preview.png" alt="">
+        </div>
+        <div class="content2">
+            <h1>About Me</h1><br><br><br><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quae maxime? Optio rem, reiciendis hic eaque rerum cupiditate voluptatum neque, alias est laborum sapiente? In saepe dolore magnam labore optio.</p>
+            <button class="btn">Hire me</button>
+        </div>
+    </div>
+    <div class="education">
+        <div class="school">
+            <h1>school</h1>
+        </div>
+        <div class="inter">
+            <h1>Intermediate</h1>
+        </div>
+        <div class="university">
+            <h1>University</h1>
+        </div>
+    </div>
+    <div id="contact">
+    <div class="contact-left">
+        <h1>Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>davinash200506@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>6302020146</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+    <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter your name" required>
+            <input type="email" name="Email" placeholder="Enter your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" id="btn2">Submit</button>
+            <button type="reset" id="btn2">Reset</button>
+        </form>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>copyright Avinash</p>
+        <p>2024</p>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzPoRxebb-lWCx7XbTDecQi1594cj4QVtnTpbALlNVt5y99ur2ar50Wpzr6m2mtmG1R/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+        document.getElementById("btn2").addEventListener("click", function() {
+        alert("your data has been submitted succesfully");
+        });
+      </script>
+</body>
+</html>

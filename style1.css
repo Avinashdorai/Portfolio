@@ -1,0 +1,276 @@
+*{
+    margin: 0%;
+    font-family: Arial;
+    color: white;
+}
+body{
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    max-width: auto;
+    min-width: 500px;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    text-align: center;
+}
+.nav .logo{
+    margin: 15px;
+    margin-left: 50px;
+}
+.logo img{
+    width: 75px;
+    height: 75px;
+}
+.nav a{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-right: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.1s ease-in-out;
+    color: white;
+    font-size: small;
+}
+.main{
+    margin-top: 22px;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.nav i{
+    color: red ;
+    margin-right: 5px;
+}
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+.content{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.content h1{
+    margin-left: 100px;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 150px;
+    letter-spacing: 2px;
+    cursor:default;
+    color: white;
+}
+.content span{
+    font-size: 50px;
+    color: red;
+}
+.content a{
+    text-decoration: none;
+}
+.content .btn1{
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: red;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    margin-left: 200px;
+    text-align: center;
+}
+.btn1:hover{
+    background-color: white;
+    color: black;
+}
+.connect{
+    margin-left: 170px;
+    margin-top: 30px;
+    cursor: default;
+}
+.connect i{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease-in 0.1s;
+}
+.connect i:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+.image1{
+    width: 500px;
+}
+.image1 img{
+    width: 300px;
+    height: 400px;
+    margin-top: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding-right: 50px;
+    background-color: #262626;
+}
+.content2{
+    color: white;
+    width: 700px;
+}
+.content2 h1{
+    text-align: center;
+    font-size: 50px;
+    cursor:default;
+}
+.content2 p{
+    text-align: center;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content2 .btn{
+    height: 30px;
+    width: 170px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: red;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    margin-left: 260px;
+    margin-top: 20px;
+    text-align: center;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.image2 img{
+    margin-left: 130px;
+    width: 300px;
+    height: 400px;
+    margin-top: 60px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.education{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.school{
+    text-align: center;
+    color: grey;
+    height: 150px;
+    width: 100px;
+}
+.inter{
+    text-align: center;
+    color: grey;
+    height: 150px;
+    width: 100px;
+}
+.university{
+    text-align: center;
+    color: grey;
+    height: 150px;
+    width: 100px;
+}
+#contact{
+    display: flex;
+    color: white;
+    padding: 50px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: red;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+    cursor: default;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transition: ease-in 0.1s;
+}
+.social-icons i{
+    color: white;
+}
+.social-icons i:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+#contact #btn2{
+    display: inline-block;
+    background: red;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    margin-left: 10px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin-top: 20px;
+    background-color: #262626;
+}
+.copyright p{
+    margin-top: 5px;
+}
+#toggle{
+    display: none;
+}
